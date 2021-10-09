@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Solar System</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+            position: absolute;
+            text-align: middle;
+            background-color: black;
+        }
+        .sun{
+            width: 100px;
+            height: 100px;
+            background: orangered;
+            position: absolute;
+            border-radius: 50%;
+            left: calc(50% - 100px/2);
+            top: calc(50% - 100px/2);
+            animation: sun 5s linear infinite;
+            text-align: center;
+            border-radius: 2px solid #bd2511;
+        }
+        @keyframes sun{
+            from{
+                transform: rotate(0deg);
+            }   
+            to{
+                transform: rotate(360deg);
+            }
+        }        
+        .mercury{
+            width: 10px;
+            height: 10px;
+            background: #747b81;
+            position: absolute;
+            border-radius: 50%;
+            left: calc(50% - 10px/2);
+            top: calc(50% - 10px/2);
+            border-radius: #747b81;
+            animation: mercury 1.8s linear infinite;
+        }
+         @keyframes mercury{
+            from{
+                transform: rotate(0) translateX(75px);
+            }
+            to{
+                transform: rotate(360deg) translateX(75px);
+            }
+         }
+        .venus{
+            width: 15px;
+            height: 15px;
+            background: #eed053;
+            position: absolute;
+            border-radius: 50%;
+            left: calc(50% - 15px/2);
+            top: calc(50% - 15px/2);
+            border-radius: #eed053;
+            animation: venus 2.5s linear infinite; 
+
+        }
+        @keyframes venus{
+            from{
+                transform: rotate(0) translateX(115px);
+            }
+            to{
+                transform: rotate(360deg) translateX(115px);
+            }
+         }
+        .earth{
+            width: 15px;
+            height: 15px;
+            background: green;
+            position: absolute;
+            border-radius: 50%;
+            left: calc(50% - 15px/2);
+            top: calc(50% - 15px/2);
+            border-radius: green;
+            animation: earth 3.2s linear infinite; 
+        }
+        @keyframes earth{
+            from{
+                transform: rotate(0) translateX(155px);
+            }
+            to{
+                transform: rotate(360deg) translateX(155px);
+            }
+         }
+        .mars{
+            width: 10px;
+            height: 10px;
+            background: #BC2732;
+            position: absolute;
+            border-radius: 70%;
+            left: calc(50% - 10px/2);
+            top: calc(50% - 10px/2);
+            border-radius: #BC2732;
+            animation: mars 4.5s linear infinite; 
+        }
+
+        @keyframes mars{
+            from{
+                transform: rotate(0) translateX(195px);
+            }
+            to{
+                transform: rotate(360deg) translateX(195px);
+            }
+        }
+
+        .jupiter{
+            width: 40px;
+            height: 40px;
+            background: #c99039;
+            position: absolute;
+            border-radius: 70%;
+            left: calc(50% - 40px/2);
+            top: calc(50% - 40px/2);
+            border-radius: #c99039;
+            animation: jupiter 5.2s linear infinite;
+        }
+        @keyframes jupiter {
+            from{
+                transform: rotate(0) translateX(235px);
+            }
+            to{
+                transform: rotate(360deg) translateX(235px);
+            }
+        }
+
+        .saturn{
+            width: 40px;
+            height: 40px;
+            background: #343e47;
+            position: absolute;
+            border-radius: 70%;
+            left: calc(50% - 40px/2);
+            top: calc(50% - 40px/2);
+            border-radius: #343e47;
+            animation: saturn 6s linear infinite;
+
+        }
+        @keyframes saturn{
+            from{
+                transform: rotate(0) translateX(350px);
+            }
+            to{
+                transform: rotate(360deg) translateX(350px);
+            }
+        }
+        .a{
+            width: 70px;
+            height: 10px;
+            background: #343e47;
+            position: absolute;
+            border-radius: 70%;
+            left: calc(50% - 70px/2);
+            top: calc(50% - 10px/2);
+            animation: saturn 6s linear infinite;
+        }
+        @keyframes saturn {
+            from{
+                transform: rotate(0) translateX(300px);
+            }
+            to{
+                transform: rotate(360deg) translateX(300px);
+            }
+        }
+        .uranus{
+            width: 30px;
+            height: 30px;
+            background: #788385;
+            position: absolute;
+            border-radius: 70%;
+            left: calc(50% - 30px/2);
+            top: calc(50% - 30px/2);
+            border-radius: #788385;
+            animation: uranus 6.7s linear infinite;
+        }
+        @keyframes uranus {
+            from{
+                transform: rotate(0) translateX(350px);
+            }
+            to{
+                transform: rotate(360deg) translateX(350px);
+            }
+        }
+            
+        .neptune{
+            width: 35px;
+            height: 35px;
+            background: #3f54ba;
+            position: absolute;
+            border-radius: 70%;
+            left: calc(50% - 35px/2);
+            top: calc(50% - 35px/2);
+            border-radius: #3f54ba;
+            animation: neptune 7.5s linear infinite;
+        }
+        @keyframes neptune{
+            from{
+                transform: rotate(0) translateX(400px);
+            }
+            to{
+                transform: rotate(360deg) translateX(400px);
+            }
+        }
+        .name{
+            color: rgb(255, 255, 255);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+    
+    </style>
+</head>
+<body>
+    <h1 class="name"><i> SOLAR SYSTEM </i></h1>
+    <div class="sun">  </div>
+    <div class="mercury">  </div>
+    <div class="venus">  </div>
+    <div class="earth"> </div>
+    <div class="mars"></div>
+    <div class="jupiter"></div>
+    <div class="saturn"> </div>
+    <div class="a"></div>
+    <div class="uranus"></div>
+    <div class="neptune"></div>
+</body>
+</html> 
